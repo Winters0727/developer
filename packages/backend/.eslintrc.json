@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:import/resolver",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parserOptions": {"project" : "./tsconfig.json", "sourceType": "module"},
+    "settings": {
+      "import/resolver": {
+        "alias": true
+      }
+    }
+  }
